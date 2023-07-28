@@ -2,7 +2,7 @@
 import random
 
 def merge_sort(lst):
-    if len(lst>1):
+    if len(lst)>1:
            mid = len(lst)//2
            left_half = lst[:mid]
            right_half = lst[mid:]
@@ -42,26 +42,26 @@ def insertion_sort(arr):
                j-=1
            arr[j+1] = key
            
-    my_list = []
-    for i in range(10):
-        my_list.append(random.randint(0,999))
-    print("\n Unsorted List")
-    print(my_list)
-    print("Sorting using insertion sort")
-    insertion_sort(my_list)
-    print(my_list)
+my_list = []
+for i in range(10):
+    my_list.append(random.randint(0,999))
+print("\n Unsorted List")
+print(my_list)
+print("Sorting using insertion sort")
+insertion_sort(my_list)
+print(my_list)
 
 
-    my_list = []
+my_list = []
 
-    for i in range(10):
-        my_list.append(random.randint(0,999))
+for i in range(10):
+    my_list.append(random.randint(0,999))
         
-    print("\n Unsorted list")
-    print(my_list)
-    print("Sorting using Merge sort")
-    merge_sort(my_list)
-    print(my_list)    
+print("\n Unsorted list")
+print(my_list)
+print("Sorting using Merge sort")
+merge_sort(my_list)
+print(my_list)    
            
                
               
